@@ -12,16 +12,18 @@ class CarManager:
     def __init__(self):
         self.cars = []
 
+    # generates a car approx every 6 calls
     def generate_car(self):
-        start_x = random.randrange(300, 400, 5)
-        start_y = random.randrange(-250, 250, 10)
-        temp = Turtle()
-        temp.penup()
-        temp.shape("square")
-        temp.color(random.choice(COLOURS))
-        temp.shapesize(stretch_len=2, stretch_wid=1)
-        temp.goto(start_x, start_y)
-        self.cars.append(temp)
+        if random.randint(1, 6) == 6:
+            start_x = random.randrange(300, 400, 5)
+            start_y = random.randrange(-250, 250, 10)
+            temp = Turtle()
+            temp.penup()
+            temp.shape("square")
+            temp.color(random.choice(COLOURS))
+            temp.shapesize(stretch_len=2, stretch_wid=1)
+            temp.goto(start_x, start_y)
+            self.cars.append(temp)
 
     def move(self, level):
         for car in self.cars:

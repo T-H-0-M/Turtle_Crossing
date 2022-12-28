@@ -23,11 +23,7 @@ count = 6
 while not game_over:
     time.sleep(0.1)
     car_manager.move(scoreboard.level)
-
-    # spaces cars out
-    if count % 6 == 0:
-        car_manager.generate_car()
-    count += 1
+    car_manager.generate_car()
     screen.update()
 
     # Player collision with cars
