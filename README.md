@@ -1,9 +1,5 @@
 # Turtle_Crossing
 
-This game was made following the 100 days of code python bootcamp created by Dr. Angela Yu
-
-# Turtle Game
-
 This program is a simple game where the player controls a turtle character to avoid cars and reach the finish line. It uses the Turtle module for graphics and includes multiple classes for managing different aspects of the game.
 
 ## Features
@@ -23,7 +19,6 @@ This program is a simple game where the player controls a turtle character to av
 
 1. Clone the repository or download the source code files.
 2. Install Python if it is not already installed on your system.
-
 
 ## Usage
 
