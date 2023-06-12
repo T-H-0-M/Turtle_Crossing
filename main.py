@@ -1,3 +1,15 @@
+"""
+main.py
+
+This module contains the main logic for a game where the player controls a character to avoid cars
+and reach the finish line. The game uses the Turtle module for graphics and includes classes such
+as Player, CarManager, and Scoreboard for managing player movement, car generation and movement,
+and scorekeeping, respectively.
+
+Author: Thomas Bandy
+
+"""
+
 import time
 from turtle import Screen
 from player import Player
